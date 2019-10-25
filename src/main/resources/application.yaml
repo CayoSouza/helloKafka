@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        messaging-in:
+          destination: messaging
+          contentType: application/json
+        messaging-out:
+          destination: messaging
+          contentType: application/json
